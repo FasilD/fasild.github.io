@@ -3,69 +3,188 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>STATE Cyber Security – Portfolio</title>
+  <title>Fasil Dires – Cyber Security Portfolio</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <style>
     body {
-      background: url('logo-banner.png') no-repeat top center;
-      background-color: #0A0A3A; /* fallback */
+      font-family: 'Courier New', Courier, monospace !important;
+      background: url('logo-banner1.png') no-repeat top center;
+      background-color: #0A0A3A;
       background-size: cover;
       color: #E5E7EB;
     }
     .green-line {
-      height: 2px;
-      background-color: #00FF00; /* Light green line */
-      margin: 1.5rem 0;
+      height: 1px;
+      width: 50%; /* or any fixed width like 600px */
+      background-color: #00FF00;
+      margin: 1.0rem auto; /* centers it horizontally */
     }
+   
   </style>
 </head>
 <body class="font-sans">
 
-  <!-- Header Section with Logo -->
+  <!-- Header Section -->
   <header class="text-center py-8">
     <img src="logo-banner.png" alt="STATE Cyber Security Logo" class="mx-auto w-72 mb-4">
-    <h1 class="text-4xl font-bold text-white">STATE Cyber Security</h1>
-    <p class="text-lg text-green-400 font-semibold">Defence Beyond Binary</p>
+    <h1 class="text-4xl font-bold text-white">Fasil Dires</h1>
+    <p class="text-2xl font-bold text-green-200 mb-1">Offensive Security Professional | Cybersecurity Consultant | Cybersecurity Researcher</p>
   </header>
 
   <div class="green-line"></div>
 
-  <!-- About Section -->
+  <!-- About Me Section -->
   <section class="max-w-4xl mx-auto px-6 py-6">
-    <h2 class="text-2xl font-bold text-green-400 mb-2">About Us</h2>
-    <p>We are a cybersecurity consulting firm focused on red team operations, secure architecture, threat modeling, and next-gen defense strategies. Our services span technical audits, real-world adversary simulation, and team enablement.</p>
+    <h2 class="text-2xl font-bold text-green-400 mb-2">About Me</h2>
+    <p>
+      I'm a cybersecurity professional passionate about offensive security, red teaming, and vulnerability research. I specialize in simulating real-world attacks to assess and strengthen organizational defenses, with expertise in penetration testing, privilege escalation, Active Directory exploitation, and evasion of endpoint protections.
+      My software development background enhances my ability to perform deep application security testing, understand code-level flaws, and identify complex vulnerabilities. I also build custom attack labs and share hands-on content to support and educate the security community.
+    </p>
+  </section>
+
+  <div class="green-line"></div>
+
+  <!-- Consulting Section -->
+  <section class="max-w-4xl mx-auto px-6 py-6">
+    <h2 class="text-2xl font-bold text-green-400 mb-2">My Consultancy – QSTATE Cyber Security</h2>
+    <p>
+      I also run a boutique cybersecurity consultancy called <strong>QSTATE Cyber Security</strong>, dedicated to helping small businesses and organizations strengthen their overall security posture. We offer tailored red team assessments, Wi-Fi hardening for public-facing businesses, phishing simulations, and specialized support for securing websites and web applications, from misconfiguration audits to application-layer penetration testing. Our goal is to empower smaller teams with practical, high-impact security improvements that are often overlooked by one-size-fits-all solutions.
+    </p>
   </section>
 
   <div class="green-line"></div>
 
   <!-- Skills Section -->
   <section class="max-w-4xl mx-auto px-6 py-6">
-    <h2 class="text-2xl font-bold text-green-400 mb-2">Skills & Tools</h2>
-    <ul class="grid grid-cols-2 md:grid-cols-3 gap-3 text-sm">
-      <li>🛠️ Red Team Labs</li>
-      <li>🐍 Python, Bash, PowerShell</li>
-      <li>☁️ Azure, AWS, M365</li>
-      <li>🔍 MITRE ATT&CK, BloodHound</li>
-      <li>📦 Docker, Kubernetes, DevSecOps</li>
-      <li>🔐 AD Abuse, Token Impersonation</li>
-    </ul>
+    <h2 class="text-2xl font-bold text-green-400 mb-2">Technical Skills</h2>
+  <table class="min-w-full border-collapse border border-gray-300 text-sm">
+  <thead>
+    <tr class="bg-gray-500">
+      <th class="text-2xl font-bold text-green-400 mb-2 text-left">Category</th>
+      <th class="text-2xl font-bold text-green-400 mb-2 text-left">Skills & Expertise</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="border border-gray-300 px-4 py-2 font-semibold">Application & Network Security</td>
+      <td class="border border-gray-300 px-4 py-2">
+        OWASP Top 10 &amp; CWE Top 25 Vulnerabilities, Web Application Security Testing & Vulnerability Triage, PTES, OSSTMM, OWASP Testing Guide, CREST Standards, CVSS, CVE, CAPEC Analysis & Vulnerability Scoring
+      </td>
+    </tr>
+    <tr>
+      <td class="border border-gray-300 px-4 py-2 font-semibold">Penetration Testing &amp; Tools</td>
+      <td class="border border-gray-300 px-4 py-2">
+        Burp Suite, OWASP ZAP, Metasploit, SQLMap, Nmap, Nessus, CANVAS, Empire, Custom Tool Development, Red Team Infrastructure Design & Deployment
+      </td>
+    </tr>
+    <tr>
+      <td class="border border-gray-300 px-4 py-2 font-semibold">Red Teaming &amp; Simulation</td>
+      <td class="border border-gray-300 px-4 py-2">
+        MITRE ATT&amp;CK Framework Simulation, Phishing Campaigns, Credential Harvesting, Antivirus Evasion Techniques (Obfuscation, DLL Injection, LOLBins)
+      </td>
+    </tr>
+    <tr>
+      <td class="border border-gray-300 px-4 py-2 font-semibold">Active Directory &amp; Post-Exploitation</td>
+      <td class="border border-gray-300 px-4 py-2">
+        Active Directory Exploitation (Kerberoasting, Pass-the-Hash, DC Sync), Enumeration with BloodHound, SharpHound, PowerView
+      </td>
+    </tr>
+   <!--  <tr>
+      <td class="border border-gray-300 px-4 py-2 font-semibold">Cloud &amp; Hybrid Attacks</td>
+      <td class="border border-gray-300 px-4 py-2">
+        Azure AD &amp; Microsoft 365 Attacks, OAuth Token Abuse, Conditional Access &amp; Cloud Misconfiguration Exploits
+      </td>
+    </tr>
+    <tr> -->
+      <td class="border border-gray-300 px-4 py-2 font-semibold">Scripting &amp; Automation</td>
+      <td class="border border-gray-300 px-4 py-2">
+        Python (Exploit Development & Automation), Bash & PowerShell (Enumeration, Persistence, Automation Scripts)
+      </td>
+    </tr>
+    <tr>
+      <td class="border border-gray-300 px-4 py-2 font-semibold">Reporting &amp; Communication</td>
+      <td class="border border-gray-300 px-4 py-2">
+        Penetration Testing Reports, Translating Technical Findings for Stakeholders, Client Mandate Support & Executive Presentations
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+
   </section>
 
   <div class="green-line"></div>
 
-  <!-- Projects -->
+  <!-- Projects Section -->
   <section class="max-w-4xl mx-auto px-6 py-6">
     <h2 class="text-2xl font-bold text-green-400 mb-2">Projects & Labs</h2>
     <div class="space-y-6">
       <div>
-        <h3 class="text-xl font-semibold">GenericAll Exploitation in AD Lab</h3>
-        <p class="text-sm">Custom-built AD lab showcasing privilege escalation via GenericAll misconfiguration.</p>
-      </div>
-      <div>
-        <h3 class="text-xl font-semibold">AV Evasion Loader</h3>
-        <p class="text-sm">AES encrypted in-memory shellcode loader bypassing Defender and Sysmon detection.</p>
-      </div>
-    </div>
+    <h3 class="text-xl font-semibold">👉 Spring Boot Offensive Security Labs</h3>
+    <p class="text-sm">
+      Built and submitted two advanced attack and defense labs based on Spring Boot vulnerabilities for hands-on offensive security training. <span class="italic text-green-600 font-semibold">Completed.</span>
+    </p>
+    <p class="text-sm">
+      Labs and documentation: 
+      <a href="https://github.com/FasilD/SpringAuth" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">GitHub Repository</a>
+    </p>
+  </div>
+  <div>
+    <h3 class="text-xl font-semibold">👉 OWASP Security Labs</h3>
+    <p class="text-sm">
+      Created practical OWASP-based labs designed for cybersecurity professionals and developers to practice ongoing security assessments and exploit mitigations.<span class="italic text-yellow-600 font-semibold">On development</span>.
+    </p>
+    <p class="text-sm">
+      Publicly available labs: 
+      <a href="https://github.com/FasilD/OWASP-Lab.git" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">GitHub Repository</a>
+    </p>
+  </div>
+  <div>
+    <h3 class="text-xl font-semibold">👉 GenericAll AD Attack Lab</h3>
+    <p class="text-sm">
+      A lab simulating AD misconfigurations (GenericAll) to demonstrate user-to-Domain Admin privilege escalation techniques. <span class="italic text-yellow-600 font-semibold">On development</span>.
+    </p>
+    <p class="text-sm">
+      Lab details &amp; source code: 
+      <a href="https://github.com/FasilD?tab=repositories" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">GitHub Repository</a>
+    </p>
+  </div>
+
+  <div>
+    <h3 class="text-xl font-semibold">👉 AV Evasion Loader</h3>
+    <p class="text-sm">
+      Developed a custom Python + Shellcode loader that evades Microsoft Defender using memory encryption and code injection techniques. <span class="italic text-yellow-600 font-semibold">On development</span>.
+    </p>
+    <p class="text-sm">
+      Project source: 
+      <a href="https://github.com/FasilD?tab=repositories" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">GitHub Repository</a>
+    </p>
+  </div>
+
+
+  <div>
+    <h3 class="text-xl font-semibold">👉 Content Creation &amp; Automation</h3>
+    <p class="text-sm">
+      Regularly publish cybersecurity news articles, technical writeups, and tutorials on Medium and 
+      <a href="https://qstatesec.com" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">QState Cyber Security</a>.
+    </p>
+    <ul class="list-disc list-inside text-sm space-y-1 mt-2">
+      <li>
+        Medium: 
+        <a href="https://medium.com/@Fasil713" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">medium.com/@Fasil713</a>
+      </li>
+      <li>
+        QState Blog: 
+        <a href="https://qstatesec.com/blog" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">qstatesec.com/blog</a>
+      </li>
+    </ul>
+    <p class="text-sm mt-2">
+      Develop custom scripts automating real-life cyber attack and defense scenarios to enhance practical training and simulations.
+    </p>
+  </div>
+</div>
+
   </section>
 
   <div class="green-line"></div>
@@ -73,13 +192,13 @@
   <!-- Contact Section -->
   <section class="max-w-4xl mx-auto px-6 py-6 text-center">
     <h2 class="text-2xl font-bold text-green-400 mb-2">Contact</h2>
-    <p>📧 email@example.com</p>
-    <p>🌐 www.statecybersecurity.com</p>
-    <p>🔗 <a href="https://linkedin.com/in/yourprofile" class="underline text-blue-300">LinkedIn</a></p>
+    <p>📧 fasilfentad@gmail.com</p>
+    <p>🌐 <a href="https:https://qstatesec.com/" class="underline text-blue-300">qstatesec.com/</a></p>
+    <p>🔗 <a href="https://www.linkedin.com/in/fasil-fenta-d-8b3395105/" class="underline text-blue-300">LinkedIn</a></p>
   </section>
 
   <footer class="text-center text-sm text-gray-500 py-6">
-    © 2025 STATE Cyber Security – Defence Beyond Binary
+    © 2025 Fasil Dires | STATE Cyber Security – Defence Beyond Binary
   </footer>
 
 </body>
